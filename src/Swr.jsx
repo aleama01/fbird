@@ -10,7 +10,7 @@ const Swr = () => {
     data: images,
     error,
     isValidating,
-  } = useSWR('https://chatanalysis.site/birds', fetcher);
+  } = useSWR('https://chatanalysis.site', fetcher);
   print(data)
   // Handles error and loading state
   if (error) return <div className='failed'>failed to load</div>;
