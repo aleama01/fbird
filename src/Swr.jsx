@@ -11,7 +11,7 @@ const Swr = () => {
     error,
     isValidating,
   } = useSWR('https://chatanalysis.site', fetcher);
-  print(data)
+  console.log(images)
   // Handles error and loading state
   if (error) return <div className='failed'>failed to load</div>;
   if (isValidating) return <div className="Loading">Loading...</div>;
