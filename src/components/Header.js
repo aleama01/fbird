@@ -3,10 +3,11 @@ import { Link } from 'react-router-dom'
 
 const Header = () => {
   return (
-    <div className='w-[80vw] mx-auto flex flex-row justify-between'>
-      <Link to='/yourBirds'> YourBirds </Link>
-      <Link to='/'> Home </Link>
-    </div>
+    <nav className='flex flex-row items-center justify-end mx-10 py-2 space-x-2 text-xl border-b'>
+      <Link to='/' className='hover:underline'> Home </Link>
+      <Link to='/yourBirds' className='hover:underline'> Birds </Link>
+      <img src='logo.jpg' alt='logo' className='h-[40px]' />
+    </nav>
   )
 }
 
